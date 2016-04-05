@@ -1,6 +1,6 @@
 {
   "name": "react-swipe-views",
-  "version": "0.0.11",
+  "version": "0.0.1",
   "description": "React Component for binded Tabs and Swipeable Views",
   "main": [
     "./lib/react-swipe-views.js",
@@ -17,8 +17,8 @@
     "views",
     "tabs"
   ],
-  "author": "Damien Varron <damien@varron.fr> (https://github.com/damusnet)",
-  "license": "MIT",
+  "author": "Gaurav Chaturvedi (https://github.com/gauravChaturvedi)",
+  "license": "",
   "homepage": "https://github.com/damusnet/react-swipe-views",
   "ignore": [
     "**/.*",

@@ -1,8 +1,8 @@
 import React from 'react';
 
 Number.isInteger = Number.isInteger || function(value) {
-  return typeof value === "number" && 
-    isFinite(value) && 
+  return typeof value === "number" &&
+    isFinite(value) &&
     Math.floor(value) === value;
 };
 
@@ -168,15 +168,18 @@ export default class SwipeViews extends React.Component {
   }
 
   _handleClick(selectedIndex, event) {
+    console.log(this.props);
     const translation = selectedIndex * this.state.pageWidthPerCent;
-    this.setState({
-      selectedIndex,
-      translation,
-      clientX: null,
-      animate: true,
-    });
-    if (event.target.localName === 'li') {
-      this._transitionTo(selectedIndex);
+    if (this.props.tappable) {
+      this.setState({
+        selectedIndex,
+        translation,
+        clientX: null,
+        animate: true,
+      });
+      if (event.target.localName === 'li') {
+        this._transitionTo(selectedIndex);
+      }
     }
   }
 
