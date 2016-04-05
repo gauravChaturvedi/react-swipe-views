@@ -168,7 +168,6 @@ export default class SwipeViews extends React.Component {
   }
 
   _handleClick(selectedIndex, event) {
-    console.log(this.props);
     const translation = selectedIndex * this.state.pageWidthPerCent;
     if (this.props.tappable) {
       this.setState({
